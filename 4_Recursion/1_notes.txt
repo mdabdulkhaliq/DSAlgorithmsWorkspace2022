@@ -1,0 +1,28 @@
+RECURSION
+---------
+    In recursion, we take a decision on the input because of which the next input becomes smaller.
+    If we have a problem that has choices and we need to make decisions on those choices to get answers, then we use recursion.
+    Design the recursive tree for the problem and code will become very easy to write.
+    Example: Subset problem
+    “abc” => a , b, c, ab, bc, ac, abc
+    Choices + Decisions will give results.
+    Choices are whether to include or not include a, b, c
+    After making a decision for the choice we get an answer.
+    We can represent the above choices and decisions using a Recursion Tree. Recursion Tree can be built using IP-OP method.
+        a   b   c
+    --------------
+    {}  X   X   X
+    a   Y   X   X
+    b   X   Y   X
+    c   X   X   Y
+    ab  Y   Y   X
+    bc  X   Y   Y
+    ac  Y   X   Y
+    abc Y   Y   Y
+
+IP-OP method
+------------
+    Images on Page 19 and 20
+    Initialize OP = “” (blank) and IP = starting input. For every character we make a decision whether to include that character or not. Once we take a decision on that character, remove it from the input, and add it or don't add the character to OP based on the decision taken. The final answers are received when the leaf nodes/smaller IP’s are blank and have no more characters to process.
+
+Recursion is used everywhere like in DP, Backtracking, Trees, Graphs, Divide and Conquer.

@@ -1,0 +1,15 @@
+Variable size window pattern
+-----------------------------
+while j < size
+	do the calculations
+	if condition < k
+		j++
+	else if condition == k
+		Get answer from the calculations
+		j++
+	else if condition > k
+		while condition > k
+			Remove calculations of i
+			i++
+		j++
+return answer

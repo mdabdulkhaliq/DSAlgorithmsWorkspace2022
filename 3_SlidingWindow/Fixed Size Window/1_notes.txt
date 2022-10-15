@@ -1,0 +1,59 @@
+Example
+-------
+    Maximum sum subarray with size K
+    3|7|6|9|2|1|8|6
+    n = 8 (size of the array)
+    k = 3 (size of the window)
+
+Brute Force approach
+--------------------
+    maxSum =  Integer.MIN_VALUE
+    for (int i = 0 ; i < n - k ; i++) {
+    sum = 0
+    for(int j = i ; j < i + k ; j++) {
+    //calculate sum here 
+    }
+    maxSum = Math.max(sum, maxSum)
+    }
+
+Origin of Sliding Window
+------------------------
+    In the above brute force approach we see that there is repetitive work, in every step.
+    3 + 7 + 6 is calculated
+    7 + 6 + 9 is calculated
+    6 + 9 + 2 is calculated
+    To avoid this we can use a sliding window technique.
+    3 + 7 + 6 + 9 + 2 + ……
+    3 + 7 + 6 + 9 + 2 + ……
+    Remove one element from the beginning and add one element next in the list.
+
+Identification of Sliding Window
+--------------------------------
+    An Array or a String will be given.
+    Sub-array or substring will be asked. 
+    Largest/Longest/Minimum/Smallest will be asked.
+    Window size will be given (k) or condition (k) will be given.
+
+Types of Sliding Window
+-----------------------
+Fixed-size window
+    We will have to maximize or minimize the sum or something else, given window size.
+Variable size window
+    Maximize or minimize window size given condition like sum or something else = K.
+
+Example: Get the largest window with a sum of 5 
+    Given array / asked largest subarray / condition sum = 5 (K)
+    3 2 4 5 1 1 1 1 1 3 3
+    Candidates are: 3 2 , 5, 1 1 1 1 1, 1 1 3
+    Result is: 1 1 1 1 1 with largest window size 5.
+
+Fixed window size pattern
+--------------------------
+while j <  size
+	//do the calculations for jth element
+	if j - i +1 < k // less than window size, simply increment j to create the window size
+		j++
+	else if j - i + 1 == k
+		//Get the result from the calculations
+		//Remove the calculations from i index
+		//Slide the window by incrementing i and j
