@@ -1,5 +1,5 @@
 /*
-    Remove duplicates from an array
+    Remove duplicates from a sorted array
     Method 1: O(n) extra space
         Navigate from 0 to n-2
         if i == i+1 just increment
