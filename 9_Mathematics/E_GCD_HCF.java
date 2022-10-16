@@ -26,7 +26,7 @@ Method 2:
         a = 9, b = 3
         a = 6, b = 3
         a = 3, b = 3
-    Method 3:
+    Method 3: O(log min(a,b))
         Optimized version of Euclid algorithm
         gcd(a,b) is return a if b = 0 or return gcd(b, a%b)
     Dry Run:
