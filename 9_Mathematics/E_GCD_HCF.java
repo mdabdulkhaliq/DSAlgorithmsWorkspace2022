@@ -26,13 +26,18 @@ Method 2:
         a = 9, b = 3
         a = 6, b = 3
         a = 3, b = 3
+    Method 3:
+        Optimized version of Euclid algorithm
+        gcd(a,b) is return a if b = 0 or return gcd(b, a%b)
 */
 public class E_GCD_HCF {
     public static void main(String[] args) {
         int a = 100, b = 200;
         printGCD1(a,b);
-        int gcd = printGCD2(a,b);
-        System.out.println("printGCD2 " + gcd);
+        int gcd2 = printGCD2(a,b);
+        System.out.println("printGCD2 " + gcd2);
+        int gcd3 = printGCD3(a,b);
+        System.out.println("printGCD3 " + gcd3);
     }
     public static void printGCD1(int a, int b){
         int gcd = Math.min(a, b);
@@ -53,5 +58,11 @@ public class E_GCD_HCF {
             }
         }
         return a;
+    }
+    public static int printGCD3(int a, int b){
+        if(b == 0)
+            return a;
+        else
+            return printGCD3(b, a%b);
     }
 }
