@@ -29,6 +29,11 @@ Method 2:
     Method 3:
         Optimized version of Euclid algorithm
         gcd(a,b) is return a if b = 0 or return gcd(b, a%b)
+    Dry Run:
+        gcd(12,15)
+            gcd(15,12)
+                gcd(12,3)
+                    gcd(3,0) -> returns 3 since b = 0
 */
 public class E_GCD_HCF {
     public static void main(String[] args) {
