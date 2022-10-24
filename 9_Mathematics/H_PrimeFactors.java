@@ -24,8 +24,11 @@ Efficient Solution:
 public class H_PrimeFactors {
     public static void main(String[] args) {
         int n = 12;
+        System.out.println("Method1:");
         getPrimeFactors(n);
+        System.out.println("Method2:");
         getPrimeFactors2(n);
+        System.out.println("Method3:");
         getPrimeFactors3(n);
     }
 
