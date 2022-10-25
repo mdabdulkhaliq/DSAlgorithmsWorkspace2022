@@ -14,7 +14,7 @@ Efficient Solution:
     Time Complexity: Recursively calling n/2 - O(log n) + constant work for log n times. = O(log n)
     Space Complexity: O(log n) auxillary space
 */
-public class ComputingPower {
+public class K_ComputingPower {
     public static void main(String[] args) {
         int x=3, n=4;
         int result = computePower(x,n);
