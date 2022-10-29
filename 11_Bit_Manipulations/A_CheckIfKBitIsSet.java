@@ -15,7 +15,7 @@ Efficient Method 1 from Naive Method 1:
 Efficient Method 2 from Alternate Method:
     To get the kth bit from n instead of dividing it by 2, right shift n -> k-1 times this will bring kth bit to the right most end (LSB) and then do a bitwise AND with 1 to get the result.
 */
-public class CheckIfKBitIsSet {
+public class A_CheckIfKBitIsSet {
     public static void main(String[] args) {
         int n=5, k=3;
         boolean result = checkKBitIsSet(n, k);
