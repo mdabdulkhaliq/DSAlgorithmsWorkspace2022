@@ -52,6 +52,6 @@ Iteration:
 */
 public class A_DecodeString {
     public static void main(String[] args) {
-        
+
     }
 }

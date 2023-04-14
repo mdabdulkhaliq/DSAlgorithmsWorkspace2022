@@ -1,0 +1,8 @@
+Stacks can be implemented using Arrays, ArrayList or LinkedList.
+
+Arrays - Since arrays are fixes size, stack will be of fixed size. 
+Use the last index as the the top of the stack.
+
+ArrayList - variable size stack.
+LinkedList - head will be top.
+
