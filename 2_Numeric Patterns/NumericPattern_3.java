@@ -5,6 +5,7 @@
     7 8 9 10
 */
 
+//Floyds triangle
 public class NumericPattern_3 {
     public static void main(String[] args) {
         int count = 0;

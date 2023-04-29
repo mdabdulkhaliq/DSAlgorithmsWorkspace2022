@@ -1,0 +1,61 @@
+Stack<Integer> stack = new Stack<>();
+
+Queue<Integer> queue = new LinkedList<>();
+Queue<Integer> queue = new ArrayDeque<>();
+
+Scanner sc = new Scanner(System.in);
+sc.next(); //take string word/token input from console
+sc.nextLine(); //take string line input from console
+sc.nextInt(); //take next integer value from console
+
+Collections Framework has
+    Iterable Interface
+        Collection Interface implements Iterable Interface
+            List Interface implements Collection Interface
+            Queue Interface implements Collection Interface
+            Set Interface implements Collection Interface
+
+Methods on Collection
+    add, size, remove, iterate, addAll, removeAll, clear
+
+List Interface has below implementations
+    ArrayList
+    LinkedList
+    Vector
+        Stack
+
+Queue Interface has below implementations
+    PriorityQueue
+    LinkedList
+    Deque Interface has below implementation
+        ArrayDeque
+
+Set Interface has below implementations
+    HashSet
+    LinkedHashSet
+    SortedSet has below implementation
+        TreeSet
+
+Map Interface has below implementations
+    HashMap
+    LinkedHashMap
+    SortedMap has below implementation
+        TreeMap
+    Hashtable
+
+JDK - JRE - JVM
+Code - complied by JDK - ByteCode - Executed by JVM - Result
+ByteCode - Portable can be executed on any machine having JVM.
+
+8 Primitive data types
+    byte - 1 byte (8 bits)
+    short - 2 bytes
+    char - 2 bytes
+    boolean - 1 bit
+    int - 4 bytes
+    long - 8 bytes
+    float - 4 bytes
+    double - 8 bytes
+
+Non-primitive data types
+    String, Class, Objects, Arrays, etc

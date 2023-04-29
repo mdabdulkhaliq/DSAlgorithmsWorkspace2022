@@ -28,6 +28,12 @@ public class StarPattern_14 {
             System.out.print(" ");
           else
             System.out.print("*");
+          /* alternate logic print only on boundaries
+            if(i == 1 || j ==1 || i == 5 || j ==5)
+              System.out.print("*");
+            else
+              System.out.print(" ");
+           */
         }
         System.out.println("");
       }

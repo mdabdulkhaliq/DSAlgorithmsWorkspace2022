@@ -7,15 +7,15 @@ public class D_StackUsingArrayList {
 
     static class Stack {
         static ArrayList<Integer> list = new ArrayList<>();
-        public static boolean isEmpty(){
+        public boolean isEmpty(){
             return list.size() == 0;
         }
 
-        public static void push(int data){
+        public void push(int data){
             list.add(data);
         }
 
-        public static int pop(){
+        public int pop(){
             if(isEmpty()){
                 return -1;
             }
@@ -24,7 +24,7 @@ public class D_StackUsingArrayList {
             return top;
         }
 
-        public static int peek(){
+        public int peek(){
             if(isEmpty()){
                 return -1;
             }

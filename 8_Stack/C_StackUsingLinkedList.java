@@ -18,12 +18,12 @@ public class C_StackUsingLinkedList {
         public static Node head;
 
         //method to check if stack is empty
-        public static boolean isEmpty(){
+        public boolean isEmpty(){
             return head == null;
         }
 
         //method to insert data into a stack
-        public static void push(int data){
+        public void push(int data){
             Node newNode = new Node(data);
             if(isEmpty()){
                 head = newNode;
@@ -35,7 +35,7 @@ public class C_StackUsingLinkedList {
             head = newNode;
         }
 
-        public static int pop(){
+        public int pop(){
             //Check if stack is empty
             if(isEmpty()){
                 return -1;
@@ -47,7 +47,7 @@ public class C_StackUsingLinkedList {
             return top;
         }
 
-        public static int peek(){
+        public int peek(){
             if(isEmpty()){
                 return -1;
             }
