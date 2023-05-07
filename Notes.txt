@@ -8,6 +8,22 @@ sc.next(); //take string word/token input from console
 sc.nextLine(); //take string line input from console
 sc.nextInt(); //take next integer value from console
 
+String.length()
+String.charAt(index)
+string1.compareTo(string2)
+string.equals(string2)
+compareTo compares characters, equals compares objects.
+Strings in java are immutable i.e. cannot be changed once created.
+StringBuilder sb = new StringBuilder("some string");
+sb.charAt(index)
+sb.setCharAt(index, newCharacter) //replace character at a given index
+sb.insert(index, character) //inserts a character at a given index
+sb.delete(startIndex, lastIndex);
+sb.append("string")
+sb.length()
+String is immutable whereas StringBuffer and StringBuilder are mutable classes. StringBuffer is thread-safe and synchronized whereas StringBuilder is not. That's why StringBuilder is faster than StringBuffer.
+
+
 Collections Framework has
     Iterable Interface
         Collection Interface implements Iterable Interface
