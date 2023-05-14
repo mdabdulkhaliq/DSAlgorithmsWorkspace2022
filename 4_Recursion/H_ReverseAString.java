@@ -1,6 +1,11 @@
 /*
     Print reverse of a string
     Pass the string and its last index
+    Base case 
+        if idx is 0 print the element and then return
+    Else 
+        print element at index
+        Recursive call with idx-1
 */
 public class H_ReverseAString {
     public static void main(String[] args) {

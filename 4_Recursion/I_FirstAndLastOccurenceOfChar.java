@@ -1,3 +1,14 @@
+/*
+    Find the first and last occurrence of a character in a given string
+    Pass the string, 0th index and the character to search.
+    Base Case - If idx is str.length
+        print the first and last index and return
+    Else
+        if current character at given idx is same as the character to search
+            If first is not set till now then set both first and last idx
+            else set last idx
+        Recursive call with str, idx+1 and char to search
+*/
 public class I_FirstAndLastOccurenceOfChar {
     
     public static int first = -1;
