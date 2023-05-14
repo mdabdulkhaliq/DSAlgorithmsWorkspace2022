@@ -30,8 +30,7 @@ public class B_PrintNto1 {
 
     public static void print(int n){
         //Base condition
-        if(n==1){
-            System.out.print(1 + " ");
+        if(n==0){
             return;
         }
 
