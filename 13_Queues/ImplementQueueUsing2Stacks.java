@@ -50,17 +50,17 @@ public class ImplementQueueUsing2Stacks {
 
     public static void main(String[] args) {
         Queue q = new Queue();
-        q.add(1);
-        q.add(2);
-        q.add(3);
-        q.add(4);
-        q.add(5);
+        Queue.add(1);
+        Queue.add(2);
+        Queue.add(3);
+        Queue.add(4);
+        Queue.add(5);
         
-        while(!q.isEmpty()){
-            System.out.println(q.peek());
-            q.remove();
+        while(!Queue.isEmpty()){
+            System.out.println(Queue.peek());
+            Queue.remove();
         }
 
-        q.isEmpty();
+        Queue.isEmpty();
     }
 }

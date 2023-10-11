@@ -80,21 +80,21 @@ public class ImplementCircularQueue {
 
     public static void main(String[] args) {
         Queue q = new Queue(4);
-        q.add(1);
-        q.add(2);
-        q.add(3);
-        q.add(4);
-        q.add(5);
-        q.remove();
-        q.add(5);
-        q.remove();
-        q.add(6);
+        Queue.add(1);
+        Queue.add(2);
+        Queue.add(3);
+        Queue.add(4);
+        Queue.add(5);
+        Queue.remove();
+        Queue.add(5);
+        Queue.remove();
+        Queue.add(6);
         
-        while(!q.isEmpty()){
-            q.peek();
-            q.remove();
+        while(!Queue.isEmpty()){
+            Queue.peek();
+            Queue.remove();
         }
 
-        q.isEmpty();
+        Queue.isEmpty();
     }
 }

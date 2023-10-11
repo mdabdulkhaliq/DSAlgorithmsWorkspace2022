@@ -73,21 +73,21 @@ public class ImplementQueueArray {
     public static void main(String[] args) {
         Queue q = new Queue(4);
         System.out.println("adding 1");
-        q.add(1);
+        Queue.add(1);
         System.out.println("adding 2");
-        q.add(2);
+        Queue.add(2);
         System.out.println("adding 3");
-        q.add(3);
+        Queue.add(3);
         System.out.println("adding 4");
-        q.add(4);
+        Queue.add(4);
         System.out.println("adding 5");
-        q.add(5);
+        Queue.add(5);
         
-        while(!q.isEmpty()){
-            System.out.println(q.peek());
-            q.remove();
+        while(!Queue.isEmpty()){
+            System.out.println(Queue.peek());
+            Queue.remove();
         }
 
-        System.out.println(q.isEmpty());
+        System.out.println(Queue.isEmpty());
     }
 }
