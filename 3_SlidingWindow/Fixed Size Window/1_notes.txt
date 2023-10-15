@@ -8,6 +8,7 @@ Example
 Brute Force approach
 --------------------
     maxSum =  Integer.MIN_VALUE
+    //we can go till n-k elements only as there needs to be k elements after ith place for last window
     for (int i = 0 ; i < n - k ; i++) {
     sum = 0
     for(int j = i ; j < i + k ; j++) {
@@ -49,11 +50,12 @@ Example: Get the largest window with a sum of 5
 
 Fixed window size pattern
 --------------------------
+start from j = 0 till end of array
 while j <  size
-	//do the calculations for jth element
+	//do the calculations for jth element here
 	if j - i +1 < k // less than window size, simply increment j to create the window size
 		j++
-	else if j - i + 1 == k
+	else if j - i + 1 == k //window size reached
 		//Get the result from the calculations
 		//Remove the calculations from i index
 		//Slide the window by incrementing i and j

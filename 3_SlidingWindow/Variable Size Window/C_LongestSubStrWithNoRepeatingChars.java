@@ -12,26 +12,30 @@ Identification
 --------------
     String is given
     Longest substring is asked
-    Condition = no repeating characters = j - i + 1
+    Condition = no repeating characters = j - i + 1 (length)
 
 Explanation
 -----------
-    No repeating characters mean all unique characters. So it means all the elements in the window should be unique, which means no of unique characters should be = j - i + 1 and this should be equal to map.size(). Also in this case map.size() cannot be greater than j - i + 1 because no. of unique characters cannot be greater than the characters in the window.
+    No repeating characters mean all unique characters. So it means all the elements in the window should be unique, which means no of unique characters should be = j - i + 1 and when we save the characters in a map this should be equal to map.size(). Also in this case map.size() cannot be greater than j - i + 1 because no. of unique characters cannot be greater than the no. of characters in the window.
+
+Brute Force approach
+--------------------
+two loops.
 
 Pseudo Code
 -----------
     while j < size
-        //do calculations
+        //Step1: do calculations
         if map.contains( str[j] )
             map.put( str[j] , map.get( str[j] ) + 1)
         else
             map.put( str[j] , 1)
         //If the no of elements in the map is less than the window size, it means there are duplicates, so decrease the window size until it's no longer lesser.
-    if map.size() < j - i + 1
+        if map.size() < j - i + 1
             while map.size() < j - i +1
                 map.put( str[i] , map.get( str[i] )-- )
                 if map.get(str[i]) == 0
-                    map.remove( str[i] )
+                    map.remove(str[i])
                 i++
             j++
         else if map.size() == j - i + 1
