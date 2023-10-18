@@ -6,3 +6,5 @@ Use the last index as the the top of the stack.
 ArrayList - variable size stack.
 LinkedList - head will be top.
 
+Notes from A.V Playlist
+If there is an arrays problem where time complexity is O(N^2), where the 2nd loop j is dependent on the first loop i then there will be an improvised version of this problem using stacks.
