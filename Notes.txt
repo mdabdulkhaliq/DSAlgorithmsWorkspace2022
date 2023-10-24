@@ -75,3 +75,16 @@ ByteCode - Portable can be executed on any machine having JVM.
 
 Non-primitive data types
     String, Class, Objects, Arrays, etc
+
+Heap is represented using Stack of size K.
+Identification of Heaps -> K + Smallest/Largest
+Create Min Heap if K + Largest is asked
+Create Max Heap if K + Smallest is asked
+If Kth largest element is asked created a min heap of size K, where all elements above K will be removed from stack as it is min heap and only K largest elements will be present in the heap.
+Given an array and is asked to find kth smallest element if we sort the complexity is nlogn (merge sort)
+If we use Heap time complexity is nlogk where k is the size of heap, because we only sort k element instead of n.
+
+Creating and initializing a Heap
+import java.util.PriorityQueue;
+PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
