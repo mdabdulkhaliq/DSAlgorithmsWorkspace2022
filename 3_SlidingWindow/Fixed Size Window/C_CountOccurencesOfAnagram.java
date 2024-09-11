@@ -100,10 +100,12 @@ public class C_CountOccurencesOfAnagram {
             }
             if(j-i+1 < k){
                 j++;
-            } else {
+            } else {//since we are only incrementing one character at a time, it will either be <k or =k cannot be >k
+                //check when window size = k, if there is an anagram
                 if(distinctCharCount == 0){
                     totalNoOfAnagrams++;
                 }
+                //slide the window
                 if(patternMap.containsKey(text.charAt(i))){
                     patternMap.put(text.charAt(i), patternMap.get(text.charAt(i))+1);
                     if(patternMap.get(text.charAt(i)) == 1)

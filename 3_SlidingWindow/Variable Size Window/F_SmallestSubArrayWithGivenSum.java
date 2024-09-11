@@ -62,10 +62,13 @@ public class SmallestSubArrayWithGivenSum {
         int arrayLength = nums.length;
         
         while(windowEnd < arrayLength){
+            //do the calculations
             if(currentSum < givenSum){
                 currentSum = currentSum + nums[windowEnd];
             }
             
+            //check conditions , if match -> get result
+            //Since the problem is sum >= for smallest window, keep reducing until condition is intact, if not proceed with next windowEnd
             while(currentSum >= givenSum){
                 smallestLength = Math.min(smallestLength, windowEnd-windowStart+1);
                 currentSum = currentSum - nums[windowStart];
