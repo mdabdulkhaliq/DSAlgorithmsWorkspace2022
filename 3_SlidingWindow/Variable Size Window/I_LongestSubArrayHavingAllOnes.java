@@ -5,7 +5,7 @@ This problem follows the Sliding Window pattern and is quite similar to Longest 
 Following a similar approach, we’ll iterate through the array to add one number at a time in the window. We’ll also keep track of the maximum number of repeating 1s in the current window (let’s call it maxOnesCount). So at any time, we know that we can have a window which has 1s repeating maxOnesCount time, so we should try to replace the remaining 0s. If we have more than ‘k’ remaining 0s, we should shrink the window as we are not allowed to replace more than ‘k’ 0s.
 */
 
-public class LongestSubArrayHavingAllOnes {
+public class I_LongestSubArrayHavingAllOnes {
     public static void main(String args[]){
         int[] nums = new int[]{0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1};
         int k = 3;

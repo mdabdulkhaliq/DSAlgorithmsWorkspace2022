@@ -52,7 +52,7 @@ Return maxSubArrayLength
 
 import java.util.*;
 
-public class LongestSubStringWithSameLettersAfterReplacement {
+public class H_LongestSubStringWithSameLettersAfterReplacement {
     public static void main(String args[]){
         String text = "aabccbb";
         int k = 2;
